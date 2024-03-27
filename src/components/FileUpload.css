@@ -1,0 +1,48 @@
+/* FileUpload.css */
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #FF5722; /* Orange border */
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* White text color */
+  transition: border-color 0.3s ease-in-out; /* Add transition for border color */
+}
+
+.dropzone:hover {
+  border-color: #FFA726; /* Change border color on hover */
+}
+
+.dropzone p {
+  color: #FFFFFF; /* White text color */
+}
+
+.preprocessed-file {
+  margin-top: 20px;
+  border: 1px solid #757575; /* Dark gray border */
+  padding: 10px;
+  background-color: #424242; /* Dark gray background */
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 0.5s ease-in-out forwards; /* Fade in animation */
+}
+
+.preprocessed-file p {
+  color: #FFFFFF; /* White text color */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
